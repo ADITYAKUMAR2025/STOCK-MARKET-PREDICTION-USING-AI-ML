@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tests / tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Experiment output (regenerate with scripts/run_experiment.py --save)
+results/
+*.png
+!docs/*.png
+
+# Cached market data
+data/raw/
+*.csv.gz
+
+# Secrets - never commit API keys
+.env
+*.key
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
